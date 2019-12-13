@@ -1,5 +1,6 @@
 package com.park.book.springboot.domain.posts;
 
+import com.park.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import javax.persistence.*;
 // 기본 생성자 자동 추가
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     //PK 필드 선언
     @Id
